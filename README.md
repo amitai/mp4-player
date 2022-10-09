@@ -1,5 +1,2 @@
-# PHP MP4 player auto player fullscreen
---------------------------------------------
-# Automatically plays the videolar of the video folder.
---------------------------------------------
-Suitable for all versions of PHP7 and PHP8.
+# PHP MP4 player 
+Based on bunyaminee/php-mp4-player.
