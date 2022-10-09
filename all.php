@@ -1,5 +1,9 @@
 <html>
 <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="simple.css">
+
 <script>
 <?php 
     $videolar_ad=array();
@@ -65,7 +69,16 @@ function ooops() {
 
     
     <body> 
+
+<header>
+<h1>Here's a big tune for you:</h1>
+</header>
+
+<main>
+<section>
+
 <div class="video-player">
+
     <video  class="videom" id="play-video" controls autobuffer id="backgroundvid"></video>
 </div>  
 <script>
@@ -87,5 +100,14 @@ if (elem.requestFullscreen) {
   elem.msRequestFullscreen();
 }
 </script>
+
+
+
+</section>
+
+</main>
+
+<footer>Don't touch that dial: another music video is coming right up!</footer>
+
 </body>
 </html>
