@@ -79,7 +79,7 @@ function ooops() {
 
 <div class="video-player">
 
-    <video  class="videom" id="play-video" controls autobuffer id="backgroundvid"></video>
+    <video class="videom" id="play-video" controls autobuffer></video>
 </div>  
 <script>
     document.getElementById("play-video").addEventListener('error', ooops,false);
@@ -107,7 +107,13 @@ if (elem.requestFullscreen) {
 
 </main>
 
-<footer>Don't touch that dial: another music video is coming right up!</footer>
+<footer>
+<p>
+Don't touch that dial: another music video is coming right up!
+
+&copy; <a href="https://lolfi.com">Larson Online Financial Services, Inc.</a></p>
+
+</footer>
 
 </body>
 </html>
