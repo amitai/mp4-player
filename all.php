@@ -110,16 +110,33 @@ if (elem.requestFullscreen) {
 
 
     <script>
-      function play() {
-        var audio = document.getElementById("audio");
+         function beep() {
+        var audio = document.getElementById("beep");
+        audio.play();
+      }
+      function horn() {
+        var audio = document.getElementById("horn");
+        audio.play();
+      }
+      function laser() {
+        var audio = document.getElementById("laser");
+        audio.play();
+      }
+       function rewind() {
+        var audio = document.getElementById("rewind");
+        audio.play();
+      }
+      function gun() {
+        var audio = document.getElementById("gun");
         audio.play();
       }
     </script>
 
-    <input type="button" value="PLAY" onclick="play()">
-    <audio id="audio" src="gun.wav"></audio>
-
-
+    <input type="button" value="horn" onclick="horn()">    <audio id="horn" src="horn.wav"></audio>
+     <input type="button" value="gunshot" onclick="gun()">    <audio id="gun" src="gun.wav"></audio> 
+         <input type="button" value="beep" onclick="beep()">    <audio id="beep" src="beep.wav"></audio> 
+         <input type="button" value="laser" onclick="laser()">    <audio id="laser" src="laser.wav"></audio> 
+     <input type="button" value="rewind" onclick="rewind()">    <audio id="rewind" src="rewind.wav"></audio> 
 </section>
 
 </main>
