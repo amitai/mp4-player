@@ -7,12 +7,12 @@
   --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 
   /* Default (light) theme */
-  --bg: #fff;
-  --accent-bg: #f5f7ff;
+  --bg: #efeecc;
+  --accent-bg: #f50f0f;
   --text: #212121;
   --text-light: #585858;
   --border: #898EA4;
-  --accent: #0d47a1;
+  --accent: #db51fa;
   --code: #d81b60;
   --preformatted: #444;
   --marked: #ffdd33;
@@ -27,7 +27,7 @@
     --accent-bg: #2b2b2b;
     --text: #dcdcdc;
     --text-light: #ababab;
-    --accent: #ffb300;
+    --accent: #ff0300;
     --code: #f06292;
     --preformatted: #ccc;
     --disabled: #111;
@@ -56,7 +56,7 @@ progress {
 
 html {
   /* Set the font globally */
-  font-family: var(--sans-font);
+  font-family: var(--mono-font);
   scroll-behavior: smooth;
 }
 
