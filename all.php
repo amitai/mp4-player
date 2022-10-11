@@ -107,7 +107,19 @@ if (elem.requestFullscreen) {
 
 <section>
 <h1>Mister DJ</h1>
-<audio controls> <source src="gun.wav" type="audio/wav"> </audio>
+
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+    <input type="button" value="PLAY" onclick="play()">
+    <audio id="audio" src="gun.wav"></audio>
+
+
 </section>
 
 </main>
