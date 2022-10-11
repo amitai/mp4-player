@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="mtv.css">
-
+        <script src=lickshot.js"></script>
 <script>
 <?php 
     $videolar_ad=array();
@@ -72,6 +72,15 @@ function ooops() {
 
 <header>
 <h1>Here's a big tune for you:</h1>
+
+  	<div id="black2">beep</div>
+    <div id="red">horn</div>
+    <div id="yellow">laser</div>
+    <div id="green">gunshot</div>
+    <div id="black">rewind</div>
+
+	<input id="slider" type="range" min="0" max="1" value="0.5" step="0.1" />
+
 </header>
 
 <main>
