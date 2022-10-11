@@ -124,7 +124,8 @@ if (elem.requestFullscreen) {
       }
        function rewind() {
         var audio = document.getElementById("rewind");
-        audio.play();
+        audio.play();                                              
+        location.reload();
       }
       function gun() {
         var audio = document.getElementById("gun");
@@ -137,6 +138,8 @@ if (elem.requestFullscreen) {
          <input type="button" value="beep" onclick="beep()">    <audio id="beep" src="beep.wav"></audio> 
          <input type="button" value="laser" onclick="laser()">    <audio id="laser" src="laser.wav"></audio> 
      <input type="button" value="rewind" onclick="rewind()">    <audio id="rewind" src="rewind.wav"></audio> 
+
+<P>* tip: use picture-in-picture to use the sound effects on mobile</P>
 </section>
 
 </main>
