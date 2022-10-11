@@ -3,7 +3,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="mtv.css">
-        <script src=lickshot.js"></script>
 <script>
 <?php 
     $videolar_ad=array();
@@ -104,18 +103,13 @@ if (elem.requestFullscreen) {
 </script>
 
 
-
 </section>
 
 <section>
-  	<div id="black2">beep</div>
-    <div id="red">horn</div>
-    <div id="yellow">laser</div>
-    <div id="green">gunshot</div>
-    <div id="black">rewind</div>
-
-	<input id="slider" type="range" min="0" max="1" value="0.5" step="0.1" />
+<h1>Mister DJ</h1>
+<audio controls> <source src="gun.wav" type="audio/wav"> </audio>
 </section>
+
 </main>
 
 <footer>
