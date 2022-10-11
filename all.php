@@ -73,13 +73,6 @@ function ooops() {
 <header>
 <h1>Here's a big tune for you:</h1>
 
-  	<div id="black2">beep</div>
-    <div id="red">horn</div>
-    <div id="yellow">laser</div>
-    <div id="green">gunshot</div>
-    <div id="black">rewind</div>
-
-	<input id="slider" type="range" min="0" max="1" value="0.5" step="0.1" />
 
 </header>
 
@@ -114,6 +107,15 @@ if (elem.requestFullscreen) {
 
 </section>
 
+<section>
+  	<div id="black2">beep</div>
+    <div id="red">horn</div>
+    <div id="yellow">laser</div>
+    <div id="green">gunshot</div>
+    <div id="black">rewind</div>
+
+	<input id="slider" type="range" min="0" max="1" value="0.5" step="0.1" />
+</section>
 </main>
 
 <footer>
