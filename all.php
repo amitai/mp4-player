@@ -106,9 +106,6 @@ if (elem.requestFullscreen) {
 </section>
 
 <section>
-<h1>Mister DJ</h1>
-
-
     <script>
          function beep() {
         var audio = document.getElementById("beep");
@@ -125,19 +122,22 @@ if (elem.requestFullscreen) {
        function rewind() {
         var audio = document.getElementById("rewind");
         audio.play();                                              
-        location.reload();
+        var bekind = document.getElementById('play-video');
+bekind.pause();
+bekind.currentTime = 0;
+bekind.load();
       }
       function gun() {
         var audio = document.getElementById("gun");
         audio.play();
       }
     </script>
-
-    <input type="button" value="horn" onclick="horn()">    <audio id="horn" src="horn.wav"></audio>
+    <p><input type="button" value="horn" onclick="horn()">    <audio id="horn" src="horn.wav"></audio>
      <input type="button" value="gunshot" onclick="gun()">    <audio id="gun" src="gun.wav"></audio> 
          <input type="button" value="beep" onclick="beep()">    <audio id="beep" src="beep.wav"></audio> 
          <input type="button" value="laser" onclick="laser()">    <audio id="laser" src="laser.wav"></audio> 
      <input type="button" value="rewind" onclick="rewind()">    <audio id="rewind" src="rewind.wav"></audio> 
+</p>
 
 <P>* tip: use picture-in-picture to use the sound effects on mobile</P>
 </section>
