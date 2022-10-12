@@ -102,6 +102,27 @@ if (elem.requestFullscreen) {
 }
 </script>
 
+<article>
+
+<?php
+$path = "/var/www/html/videolar/*";
+
+$latest_ctime = 0;
+$latest_filename = '';
+
+$files = glob($path);
+foreach($files as $file)
+{
+        if (is_file($file) && filectime($file) > $latest_ctime)
+        {
+                $latest_ctime = filectime($file);
+                $latest_filename = $file;
+        }
+}
+echo "<p> last update: " . $latest_ctime . "</p>";
+?>
+
+</article>
 
 </section>
 
@@ -141,6 +162,8 @@ bekind.load();
 
 <P>* tip: use picture-in-picture to use the sound effects on mobile</P>
 </section>
+
+
 
 </main>
 
