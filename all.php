@@ -119,7 +119,7 @@ foreach($files as $file)
                 $latest_filename = $file;
         }
 }
-echo "<p> last update: " . $latest_ctime . "</p>";
+echo "<p> last update: " . date ("F d Y H:i:s.", $latest_ctime) . "</p>";
 ?>
 
 </article>
