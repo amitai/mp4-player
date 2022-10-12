@@ -33,6 +33,9 @@
 <?php
 $path = "/var/www/html/videolar/*";
 
+
+$fi = new FilesystemIterator($path);
+
 $latest_ctime = 0;
 $latest_filename = '';
 
@@ -45,7 +48,10 @@ foreach($files as $file)
                 $latest_filename = $file;
         }
 }
-echo "<p> Latest video added on " . date ("F d Y H:i:s.", $latest_ctime) . "</p>";
+
+echo("<p>Video count: %d </p>", iterator_count($fi));
+
+echo "<p>Latest video added on " . date ("F d Y H:i:s.", $latest_ctime) . "</p>";
 ?>
 
 		</section>
