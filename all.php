@@ -102,8 +102,6 @@ if (elem.requestFullscreen) {
 }
 </script>
 
-<article>
-
 <?php
 $path = "/var/www/html/videolar/*";
 
@@ -119,10 +117,9 @@ foreach($files as $file)
                 $latest_filename = $file;
         }
 }
-echo "<p> last update: " . date ("F d Y H:i:s.", $latest_ctime) . "</p>";
+echo "<p> Latest video added on " . date ("F d Y H:i:s.", $latest_ctime) . "</p>";
 ?>
 
-</article>
 
 </section>
 
