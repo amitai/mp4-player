@@ -1,9 +1,9 @@
 <?php
 
-echo "			<nav>
+echo "<nav>
 <ul>
-    <li><a href="random.php" target="_new">give me one random video</a></li>
-    <li><a href="all.php" target="_new">give me all the videos</a></li>
+    <li><a href=\"random.php\">give me one random video</a></li>
+    <li><a href=\"all.php\">give me all the videos</a></li>
 </ul>
 </nav>
 ";
