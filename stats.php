@@ -26,7 +26,13 @@ echo "
 
 echo "<tr><td> Latest video added on </td> <td>" . date ("F d Y H:i:s.", $latest_ctime) . "</td> </tr>";
 
-echo "<tr><td> Number of videos is </td> <td>" . $filecount . "</td> </tr>";
+/* echo "<tr><td> Number of videos is </td> <td>" . $filecount . "</td> </tr>"; */
+
+echo $path;
+echo "<hr";
+
+echo $files;
+
 
 echo "</table>";
 ?>
