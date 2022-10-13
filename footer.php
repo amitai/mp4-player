@@ -1,5 +1,8 @@
 <?php
 
+echo "<footer>";
+
+
 echo "<nav>
 <ul>
     <li><a href=\"random.php\">give me one random video</a></li>
@@ -7,8 +10,12 @@ echo "<nav>
 </ul>
 </nav>
 ";
-echo "<footer>
+
+echo"
 		<p>&copy; <a href=\"https://lolfi.com\">Larson Online Financial Services, Inc.</a></p>
-	</footer>";
+	";
+    
+    
+echo "</footer>";
     ?>
 
