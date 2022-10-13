@@ -26,7 +26,7 @@ echo "
 
 echo "<li>The latest video was added on " . date ("F d Y H:i", $latest_ctime) . "</li>";
 
-echo "We have " . iterator_count($filecount) . " videos in our system</li>";
+echo "<li>We have " . iterator_count($filecount) . " videos in our system</li>";
 
 echo "</ul>";
 ?>
