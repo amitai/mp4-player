@@ -4,7 +4,7 @@ $path = "/var/www/html/videolar/*";
 $latest_ctime = 0;
 $latest_filename = '';
 
-$filecount = new FilesystemIterator(/var/www/html/videolar);
+$filecount = new FilesystemIterator("/var/www/html/videolar");
 
 $files = glob($path);
 foreach($files as $file)
