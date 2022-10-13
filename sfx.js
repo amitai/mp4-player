@@ -1,22 +1,3 @@
-    document.getElementById("play-video").addEventListener('error', ooops,false);
-
-        function ooops() {
-            console.log(document.getElementById("play-video").error)
-        }
-    
-    nextVideo()
-    var elem = document.getElementById("video-player");
-if (elem.requestFullscreen) {
-  elem.requestFullscreen();
-} else if (elem.mozRequestFullScreen) {
-  elem.mozRequestFullScreen();
-} else if (elem.webkitRequestFullscreen) {
-  elem.webkitRequestFullscreen();
-} else if (elem.msRequestFullscreen) { 
-  elem.msRequestFullscreen();
-}
-
-
 function beep() {
 var audio = document.getElementById("beep");
 audio.play();

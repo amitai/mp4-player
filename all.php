@@ -3,6 +3,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="mtv.css">
+        <script src="sfx.js"></script>
+
 <script>
 <?php 
     $videolar_ad=array();
@@ -150,11 +152,11 @@ bekind.load();
         audio.play();
       }
     </script>
-    <p><input type="button" value="horn" onclick="horn()">    <audio id="horn" src="horn.wav"></audio>
-     <input type="button" value="gunshot" onclick="gun()">    <audio id="gun" src="gun.wav"></audio> 
-         <input type="button" value="beep" onclick="beep()">    <audio id="beep" src="beep.wav"></audio> 
-         <input type="button" value="laser" onclick="laser()">    <audio id="laser" src="laser.wav"></audio> 
-     <input type="button" value="rewind" onclick="rewind()">    <audio id="rewind" src="rewind.wav"></audio> 
+    <p><input type="button" value="horn" onclick="horn()">    <audio id="horn" src="sfx/horn.wav"></audio>
+     <input type="button" value="gunshot" onclick="gun()">    <audio id="gun" src="sfx/gun.wav"></audio> 
+         <input type="button" value="beep" onclick="beep()">    <audio id="beep" src="sfx/beep.wav"></audio> 
+         <input type="button" value="laser" onclick="laser()">    <audio id="laser" src="sfx/laser.wav"></audio> 
+     <input type="button" value="rewind" onclick="rewind()">    <audio id="rewind" src="sfx/rewind.wav"></audio> 
 </p>
 
 <P>* tip: use picture-in-picture to use the sound effects on mobile</P>
