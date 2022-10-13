@@ -9,12 +9,6 @@
 </head>
 <body>
 	<header>
-			<nav>
-			<ul>
-				<li><a href="random.php" target="_new">give me one random video</a></li>
-				<li><a href="all.php" target="_new">give me all the videos</a></li>
-			</ul>
-		</nav>
 		<h1>Welcome to MTV</h1>
 	</header>
 
@@ -26,11 +20,11 @@
 			<nav>
 			<ul>
 				<li><a href="random.php" target="_new">give me one random video</a></li>
-				<li><a href="all.php" target="_new">give me all the videos</a></li>
+				<li><a href="all.php">give me all the videos</a></li>
 			</ul>
 		</nav>
 
-<?php include 'stats.php';?>
+		<?php include 'stats.php';?>
 
 		</section>
 
