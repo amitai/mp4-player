@@ -21,12 +21,12 @@ echo "
 <h3>Shocking stats!</h3>
 <p>You're not going to fucking believe this:</p>
 
-<table border=1>";
+<ul>";
 
 
-echo "<tr><td> Latest video added on </td> <td>" . date ("F d Y H:i:s.", $latest_ctime) . "</td> </tr>";
+echo "<li>The latest video was added on " . date ("F d Y H:i", $latest_ctime) . "</li>";
 
-echo "<tr><td> Number of videos is </td> <td>" . iterator_count($filecount) . "</td> </tr>";
+echo "We have " . iterator_count($filecount) . " videos in our system</li>";
 
-echo "</table>";
+echo "</ul>";
 ?>
