@@ -4,6 +4,8 @@ $path = "/var/www/html/videolar/*";
 $latest_ctime = 0;
 $latest_filename = '';
 
+$filecount = new FilesystemIterator($path);
+
 $files = glob($path);
 foreach($files as $file)
 {
@@ -16,15 +18,15 @@ foreach($files as $file)
 echo "
 
 <article>
-<h2>Shocking stats!</h2>
+<h3>Shocking stats!</h3>
 <p>You're not going to fucking believe this:</p>
 
 <table>";
 
 
-echo "
-<tr>
-<td> Latest video added on </td> <td>" . date ("F d Y H:i:s.", $latest_ctime) . "</td> </tr>";
+echo "<tr><td> Latest video added on </td> <td>" . date ("F d Y H:i:s.", $latest_ctime) . "</td> </tr>";
+
+echo "<tr><td> Number of videos is </td> <td>" . $filecount . "</td> </tr>";
 
 echo "</table>";
 ?>

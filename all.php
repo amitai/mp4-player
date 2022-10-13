@@ -104,10 +104,6 @@ if (elem.requestFullscreen) {
 }
 </script>
 
-
-<?php include 'stats.php';?>
-
-
 </section>
 
 <section>
@@ -145,6 +141,13 @@ bekind.load();
 </p>
 
 <P>* tip: use picture-in-picture to use the sound effects on mobile</P>
+
+
+
+
+<?php include 'stats.php';?>
+
+
 </section>
 
 
