@@ -104,23 +104,8 @@ if (elem.requestFullscreen) {
 }
 </script>
 
-<?php
-$path = "/var/www/html/videolar/*";
 
-$latest_ctime = 0;
-$latest_filename = '';
-
-$files = glob($path);
-foreach($files as $file)
-{
-        if (is_file($file) && filectime($file) > $latest_ctime)
-        {
-                $latest_ctime = filectime($file);
-                $latest_filename = $file;
-        }
-}
-echo "<p> Latest video added on " . date ("F d Y H:i:s.", $latest_ctime) . "</p>";
-?>
+<?php include 'stats.php';?>
 
 
 </section>
