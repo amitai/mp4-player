@@ -51,10 +51,7 @@ echo "<p> Latest video added on " . date ("F d Y H:i:s.", $latest_ctime) . "</p>
 		</section>
 
 	</main>
-
-	<footer>
-		<p>&copy; <a href="https://lolfi.com">Larson Online Financial Services, Inc.</a></p>
-	</footer>
+	<?php include 'footer.php';?>
 </body>
 </html>
 

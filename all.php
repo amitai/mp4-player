@@ -166,13 +166,7 @@ bekind.load();
 
 </main>
 
-<footer>
-<p>
-Don't touch that dial: another music video is coming right up!
-
-&copy; <a href="https://lolfi.com">Larson Online Financial Services, Inc.</a></p>
-
-</footer>
+<?php include 'footer.php';?>
 
 </body>
 </html>
