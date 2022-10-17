@@ -41,4 +41,8 @@ function folderSize ($dir)
     return $size;
 }
 
+folderSize $path;
+
+echo $size;
+
 ?>
