@@ -30,19 +30,5 @@ echo "<li>We have " . iterator_count($filecount) . " videos in our system</li>";
 
 echo "</ul>";
 
-function folderSize ($dir)
-{
-    $size = 0;
-
-    foreach (glob(rtrim($dir, '/').'/*', GLOB_NOSORT) as $each) {
-        $size += is_file($each) ? filesize($each) : folderSize($each);
-    }
-
-    return $size;
-}
-
-folderSize $path;
-
-echo $size;
 
 ?>
