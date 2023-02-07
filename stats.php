@@ -19,16 +19,14 @@ echo "
 
 <article>
 <h3>Shocking stats!</h3>
-<p>You're not going to fucking believe this:</p>
-
-<ul>";
+<p>You're not going to believe this: ";
 
 
-echo "<li>The latest video was added on " . date ("F d Y H:i", $latest_ctime) . "</li>";
+echo "The latest video was added on " . date ("F d Y H:i", $latest_ctime) . " and ";
 
-echo "<li>We have " . iterator_count($filecount) . " videos in our system</li>";
+echo "we have " . iterator_count($filecount) . " videos in our system.";
 
-echo "</ul>";
+echo "</p>";
 
 
 ?>
